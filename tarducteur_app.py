@@ -21,21 +21,21 @@ def traduire():
 fen = tk.Tk()
 fen.title("Traducteur Kabyle ↔ Français")
 fen.geometry("450x250")
-fen.configure(bg="#f0f0f0")  # couleur de fond
+fen.configure(bg="#f0f0f0")  # couleur en fond
 
-# Titre
+# titrre
 tk.Label(fen, text="Traducteur Kabyle ↔ Français", font=("Helvetica", 16, "bold"), bg="#f0f0f0").pack(pady=10)
 
-# Entrée
+#entree
 entree = tk.Entry(fen, width=30, font=("Arial", 12))
 entree.pack(pady=5)
 
-# Choix de direction
+#choix de direct
 var_dir = tk.StringVar(value="kab → fr")
 tk.Radiobutton(fen, text="kab → fr", variable=var_dir, value="kab → fr", bg="#f0f0f0").pack()
 tk.Radiobutton(fen, text="fr → kab", variable=var_dir, value="fr → kab", bg="#f0f0f0").pack()
 
-# Bouton
+# bouton
 tk.Button(fen, text="Traduire", command=traduire, font=("Arial", 12, "bold"), bg="#4CAF50", fg="white").pack(pady=10)
 
 # Zone de sortie
